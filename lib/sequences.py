@@ -1,34 +1,39 @@
 #!/usr/bin/env python3
 
 def print_fibonacci(length):
-    a, b = 0, 1
-    count=2
+    sequence = []
+    x, y = 0, 1
+    for _ in range(length):
+        sequence.append(x)
+        x, y = y, x + y
 
     if length == 0:
-        print([])
-    elif length == 1:
-        print([a])
+            print([])
+    
     else:
-        print (a, end=" ")
-        print (b, end=" ") 
-        while count < length:
-            c = a + b 
-            print (c, end=" ")
-            count +=1
-            a = b
-            b = c 
-
+        print (sequence)
+    
         pass     
-        # fibonacci_sequence = [a, b]
-        # for _ in range(2, length):
-        #     c = a + b
-        #     a, b = b, c
-        #     fibonacci_sequence.append(c)
+        
 
-        # print(f"Fibonacci sequence up to length {length}:")
-        # print(fibonacci_sequence)
+    #Fibonacci sequence   
+# def fib(n):
 
-# Example usage:
-#print_fibonacci(10)
-      
+#     a = 0
+#     b = 1
+
+#     if n == 1:
+#         print(a)
+
+#     else:
+#     print(a)
+#     print(b)
+
+#     for i in range(2,n):
+#         c = a + b
+#         a = b
+#         b = c
+#         print(c)
+
+# fib(10)
     
